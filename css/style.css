@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em ;
+    border-bottom: 1px solid darkslategray ;
+}
+
+.nav-logo img  {
+    max-height: 40px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 2px 1em;
+    border: 0.5px solid black;
+    min-width: 60px;
+    text-align: center;
+}
+
+.greetings {
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+.banner{
+    border-bottom: 1px solid black;
+    background-image: url('../assets/JP-Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.headquarters{
+    padding: 3;
+
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.hq-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .footer-text { */
+
+/* } */
