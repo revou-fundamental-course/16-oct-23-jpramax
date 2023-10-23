@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JP-Mini Course</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
   </head>
   <body>
-    <header class="header">
+    <!-- Halaman Section untuk Header dan Menu Navigasi -->
+    <header class="header" id="beranda">
       <div class="nav-logo">
-        <img src="./assets/revou-logo.png" alt="revou-logo" />
+        <img src="./assets/image/revou-logo.png" alt="revou-logo" />
       </div>
       <nav class="nav">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">Our Profile</div>
-        <div class="nav-item">Portofolio</div>
-        <div class="nav-item">Contact Us</div>
+        <a class="nav-items" href="#beranda">Home</a>
+        <a class="nav-items" href="#profile">Our Profile</a>
+        <a class="nav-items" href="#portofolio">Portofolio</a>
+        <a class="nav-items" href="#contact-us">Contact Us</a>
       </nav>
     </header>
+
+    <!-- Halaman Section untuk Banner dan Background Image -->
     <section class="banner">
       <div class="greetings">
         <h1>Hi, My name is Julian Pramana</h1>
@@ -26,31 +29,128 @@
       </div>
     </section>
 
-    <section class="headquarters">
-      <h1>Our Headquarters</h1>
+    <!-- Halaman Section untuk Headquarters -->
+    <section class="headquarters" id="profile">
+      <center><h1>Our Headquarters</h1></center>
       <div class="hq-items">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+        <img
+          class="circle"
+          src="./assets/gambar/Bangku-Rancah_2.jpeg"
+          alt="Bukit Bangku Rancah Ciamis"
+        />
+        <img
+          class="circle"
+          src="./assets/gambar/Cikuray_1.jpg"
+          alt="Cikuray Mountain @ Garut"
+        />
+        <img
+          class="circle"
+          src="./assets/gambar/Galunggung_1.jpg"
+          alt="Galunggung Mountain @ Tasikmalaya"
+        />
+      </div>
+      <div class="hq-items">
+        <div>Ciamis</div>
+        <div>Garut</div>
+        <div>Tasikmalaya</div>
       </div>
     </section>
 
-    <section class="form">
+    <!-- Halaman Section untuk Contact Us -->
+    <section class="form" id="contact-us">
       <div class="form-left">
+        <h1>Contact Us</h1>
         <form>
           <table>
-            <td>
-              <label for="nama">Nama</label>
-            </td>
-            <td>:</td>
-            <td>
-              <input type="nama" name="nama" id="nama" />
-            </td>
+            <tr>
+              <td>
+                <label for="nama">Nama</label>
+              </td>
+              <td>:</td>
+              <td>
+                <input type="text" name="nama" id="nama" placeholder="Nama" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="tgl_lahir">Tanggal Lahir</label>
+              </td>
+              <td>:</td>
+              <td>
+                <input type="date" name="tgl_lahir" id="tgl_lahir" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="jns_kel">Jenis Kelamin</label>
+              </td>
+              <td>:</td>
+              <td>
+                <input
+                  type="radio"
+                  name="jns_kel"
+                  id="pria"
+                  value="Laki-laki"
+                />
+                <label for="pria">Laki-laki</label>
+                <input
+                  type="radio"
+                  name="jns_kel"
+                  id="wanita"
+                  value="Perempuan"
+                />
+                <label for="wanita">Perempuan</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pesan">Pesan</label>
+              </td>
+              <td>:</td>
+              <td>
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  placeholder="Pesan"
+                  rows="4"
+                  cols="50"
+                >
+                </textarea>
+              </td>
+            </tr>
+            <tr></tr>
           </table>
+          <input type="submit" value="sumbit" />
         </form>
       </div>
     </section>
 
+    <!-- Halaman Section untuk Contact Us
+    <section class="form" id="contact-us">
+      <div class="form-left">
+        <div id="cf-form">
+          <h1 class="cf-h1">Contact Us</h1>
+          <form class="cf-form-class" id="cf-form-id">
+            <div class="cf-form-grup">
+              <label for="nama">Nama :</label>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Nama"
+                required
+              />
+            </div>
+            <div class="cf-form-grup">
+              <label for="tgl_lahir">Tanggal Lahir :</label>
+              <input type="date" name="tgl_lahir" id="tgl_lahir" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Section Footer -->
     <section>
       <footer class="footer">
         <center>
