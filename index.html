@@ -3,12 +3,233 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JP-Mini Course</title>
+    <title>"U-Bar" Ulin Bareng</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
   </head>
-
   <body>
-    <h1>Hello Gaiss...</h1>
-    <script src="./js/script.js"></script>
+      <header>
+      <div class="container">
+        <div class="nav">
+          <div class="nav-logo">
+            <img src="./assets/image/revou-logo.png" alt="revou-logo" />
+          </div>
+          <nav>
+          <a class="nav-items" href="#beranda">Home</a>
+          <a class="nav-items" href="#profile">Our Profile</a>
+          <a class="nav-items" href="#portofolio">Portofolio</a>
+          <a class="nav-items" href="#contact-us">Contact Us</a>
+          </nav>
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </div>
+        <section class="header" id="beranda">
+          <div class="header-left">
+            <h3 class="pre-title">Welcome to Website</h3>
+            <h1 class="header-name"><div class="first-name" style="display: inline-block;">  </div>
+                <span> <div class="last-name" style="display: inline-block;"> </div></span></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="header-right">
+            <div class="slideshow">
+              <div class="mySlide fade">
+                <img src="./assets/image/JP-Background-1.jpg" alt="Mountain 1" />
+              </div>
+              <div class="mySlide fade">
+                <img src="./assets/image/JP-Background-2.png" alt="Mountain 2" />
+              </div>
+              <div class="mySlide fade">
+                <img src="./assets/image/JP-Background-3.jpg" alt="Mountain 3" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+      <section class="profile" id="profile">
+        <center><h1>Our Profile</h1></center>
+        <div class="our-profile" id="profile-img">
+          cxvxvxxcvxcvxcvxvx
+
+        </div>
+
+        <div class="our-profile" id="profile-info">
+          <h2>"U-Bar" ~ Ulin Bareng for Your Travel Planning</h2>
+          <p> Dapatkan pengalaman wisata yang lebih berkesan dan tak terlupakan saat bewisata .
+              Kami menghadirkan beragam pilihan paket wisata, tour harian, paket honeymoon, trekking mountain, hingga sewa mobil + driver.
+              Kami adalah biro perjalanan pariwisata profesional yang sudah berpengalaman selama bertahun-tahun lamanya.
+
+              Seluruh layanan kami didukung oleh tim profesional baik customer service maupun driver dan tour guide. Fasilitas pendukung yang memadai juga turut andil memaksimalkan layanan paket wisata yang kami tawarkan. Tak ketinggalan kami juga bekerjasama dengan berbagai hotel berbintang sebagai sarana penginapan/homestay untuk para wisatawan.
+              Komitmen kami adalah memberikan pelayanan terbaik demi kepuasan customer yang menjadi prioritas utama. Kami tak pernah jemu mendengarkan setiap kebutuhan customer dan mewujudkannya melalui pelayanan terbaik dan memuaskan. Jadi tak perlu ragu untuk memilih kami, karena kami menjamin kepuasan Anda akan wisata yang lebih berkesan dan tak terlupakan.
+          </p>
+        </div>
+      </section>
+
+      <section class="portofolio" id="portofolio">
+        <center><h1>Our Portofolio</h1></center>
+        <div class="hq-items">
+          <img
+            class="circle"
+            src="./assets/gambar/Bangku-Rancah_2.jpeg"
+            alt="Bukit Bangku Rancah at Ciamis"
+          />
+          <img
+            class="circle"
+            src="./assets/gambar/Cikuray_1.jpg"
+            alt="Cikuray Mountain at Garut"
+          />
+          <img
+            class="circle"
+            src="./assets/gambar/Galunggung_1.jpg"
+            alt="Galunggung Mountain at Tasikmalaya"
+          />
+        </div>
+
+        <div class="hq-items">
+          <div>Ciamis</div>
+          <div>Garut</div>
+          <div>Tasikmalaya</div>
+        </div>
+      </section>
+
+      <section class="form" id="contact-us">
+        <article>
+          <div class="form-left">
+            <h1>Contact Us</h1> <br>
+            <!-- <form name="message-form" autocomplete="off" onsubmit="return submitForm()"> -->
+              <form class="message-form" autocomplete="off" action="" >
+                  <table>
+                <tr>
+                  <td><label for="full-name">Nama</label></td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="text"
+                      name="full-name"
+                      id="full-name"
+                      placeholder="input Name ..."
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="birth-date">Tanggal Lahir</label></td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="date"
+                      name="birth-date"
+                      id="birth-date"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="">Jenis Kelamin</label></td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="Laki-laki"
+                      required
+                    />
+                    <label for="male">Laki-laki</label>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="Perempuan"
+                    />
+                    <label for="female">Perempuan</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="phone">No. Handphone</label></td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="use +628 or 08 ..."
+                      pattern="(\+62|0)8[1-9]{6,11}$"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="email">Email</label></td>
+                  <td>:</td>
+                  <td>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="input email ..."
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="message">Pesan</label></td>
+                  <td>:</td>
+                  <td>
+                    <textarea
+                      name="message"
+                      placeholder="Input Messages Here ...."
+                      cols="40"
+                      rows="4"
+                      id="message"
+                      required
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <input type="submit" value="Submit" id="submit"/>
+                    <!-- <button onclick="submitForm()">Submit</button> -->
+                  </td>
+                </tr>
+              </table>
+              </form>
+          </div>
+        </article>
+
+        <article>
+          <div class="form-right">
+            <h1>&nbsp;</h1>
+              <div id="right-box">
+                <p>&nbsp; Current Time : <span id="sender-time"></span></p>
+                <p>&nbsp; Nama : <span id="sender-name"></span></p>
+                <p>&nbsp; Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                <p>&nbsp; Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>&nbsp; Ho. Handpohone : <span id="sender-phone"></span></p>
+                <p>&nbsp; Email : <span id="sender-email"></span></p>
+                <p>&nbsp; Pesan : <span id="sender-message"></span></p>
+              </div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <footer class="footer">
+          <center>
+            <p class="footer-text">made by Julian Pramana</p>
+          </center>
+        </footer>
+      </section>
+    </div>
   </body>
+  <script src="./js/script.js"></script>
 </html>
